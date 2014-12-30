@@ -38,3 +38,13 @@ sudo vi /etc/vim/
 sudo vi /etc/vim/vimrc
 set ts=4
 set expandtab
+
+vim全局替换a为b
+:%s/a/b/g
+
+解压rar
+unrar x .rar .
+
+cpdir
+cp -r
+
