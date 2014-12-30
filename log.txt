@@ -31,3 +31,10 @@ git config --global user.email "su_wy@outlook.com"
 git config --global credential.helper cache
 git config --global credential.helper 'cache --timeout=3600'
 
+修改tab缩进4字符
+sudo vi /etc/vim/
+
+修改tab缩进4字符
+sudo vi /etc/vim/vimrc
+set ts=4
+set expandtab
