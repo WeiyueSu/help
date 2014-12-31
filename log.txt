@@ -32,9 +32,6 @@ git config --global credential.helper cache
 git config --global credential.helper 'cache --timeout=3600'
 
 修改tab缩进4字符
-sudo vi /etc/vim/
-
-修改tab缩进4字符
 sudo vi /etc/vim/vimrc
 set ts=4
 set expandtab
@@ -47,4 +44,7 @@ unrar x .rar .
 
 cpdir
 cp -r
+
+查询显卡
+lspci |grep VGA^C
 
