@@ -17,7 +17,7 @@ sudo apt-get install vim
 
 Jdk环境变量
 sudo vi /etc/profile
-export JAVA_HOME=/usr/local/bin/jdk1.8.0_25
+export JAVA_HOME=/usr/local/jdk1.8.0_25
 export ClASSPATH=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar:
 export PATH=$JAVA_HOME/bin:$PATH
 
@@ -50,3 +50,11 @@ lspci |grep VGA^C
 
 html中文乱码
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+修改ip
+sudo vi /etc/network/interfaces
+auto eth0
+iface eth0 inet static
+address 116.57.115.113
+netmask 255.255.255.192
+gateway 116.57.115.126
