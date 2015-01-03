@@ -48,3 +48,5 @@ cp -r
 查询显卡
 lspci |grep VGA^C
 
+html中文乱码
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
