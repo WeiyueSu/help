@@ -70,3 +70,5 @@ gcc MatrixMul.cpp -lOpenCL -L/usr/local/cuda/include/ -L/usr/local/cuda/lib64
 Inconsistency detected by ld.so: dl-version.c: 224: _dl_check_map_versions: Assertion `needed != ((void *)0)' failed!
 export LD_PRELOAD=/usr/lib/x86_64-linux-gnu/mesa/libGL.so.1:$LD_PRELOAD
 
+
+second
