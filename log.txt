@@ -17,7 +17,7 @@ sudo apt-get install vim
 
 Jdk环境变量
 sudo vi /etc/profile
-export JAVA_HOME=/usr/local/bin/jdk1.8.0_25
+export JAVA_HOME=/usr/local/jdk1.8.0_25
 export ClASSPATH=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar:
 export PATH=$JAVA_HOME/bin:$PATH
 
@@ -70,5 +70,10 @@ gcc MatrixMul.cpp -lOpenCL -L/usr/local/cuda/include/ -L/usr/local/cuda/lib64
 Inconsistency detected by ld.so: dl-version.c: 224: _dl_check_map_versions: Assertion `needed != ((void *)0)' failed!
 export LD_PRELOAD=/usr/lib/x86_64-linux-gnu/mesa/libGL.so.1:$LD_PRELOAD
 
-
-
+修改ip
+sudo vi /etc/network/interfaces
+auto eth0
+iface eth0 inet static
+address 116.57.115.113
+netmask 255.255.255.192
+gateway 116.57.115.126
