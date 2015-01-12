@@ -46,7 +46,7 @@ cpdir
 cp -r
 
 查询显卡
-lspci |grep VGA^C
+lspci |grep VGA
 
 html中文乱码
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -58,3 +58,7 @@ iface eth0 inet static
 address 116.57.115.113
 netmask 255.255.255.192
 gateway 116.57.115.126
+
+编码问题
+convmv -f GBK -t UTF-8 1.pdf 
+
