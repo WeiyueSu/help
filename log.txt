@@ -51,6 +51,25 @@ lspci |grep VGA
 html中文乱码
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
+tar.bz2
+tar -xjf
+
+ubuntu安装cuda
+tty1 
+sudo stop lightdm
+sudo ./NVIDIA.run --no-opengl-files
+sudo ./cuda.run (do not install driver)
+vi /etc/X11/xorg.conf
+HorizSync 30.0-50.0
+VertRefresh 53.0-60.0
+
+eclipse opencl
+Project--Properties--C/C++Build--Settings--GCCC++Compiler--Includes--Include paths(/usr/local/cuda/include) GCCC++Linker--Libraries--Libraries(OpenCL) Library serch path(/usr/local/cuda/lib64
+gcc MatrixMul.cpp -lOpenCL -L/usr/local/cuda/include/ -L/usr/local/cuda/lib64
+
+Inconsistency detected by ld.so: dl-version.c: 224: _dl_check_map_versions: Assertion `needed != ((void *)0)' failed!
+export LD_PRELOAD=/usr/lib/x86_64-linux-gnu/mesa/libGL.so.1:$LD_PRELOAD
+
 修改ip
 sudo vi /etc/network/interfaces
 auto eth0
