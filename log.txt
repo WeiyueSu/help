@@ -58,3 +58,7 @@ iface eth0 inet static
 address 116.57.115.113
 netmask 255.255.255.192
 gateway 116.57.115.126
+
+设置DNS
+sudo vi /etc/resolv.conf^C
+nameserver 202.112.17.33
