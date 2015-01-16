@@ -81,3 +81,11 @@ gateway 116.57.115.126
 编码问题
 convmv -f GBK -t UTF-8 1.pdf 
 
+vi .gitignore
+Debug
+RemoteSystemsTempFiles
+.cproject
+.project
+.settings
+.metadata
+
