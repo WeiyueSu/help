@@ -97,3 +97,5 @@ sudo apt-get install lib32stdc++6 lib32z1 lib32z1-dev
 乱码
 enca -L zh_CN -x utf-8  filename
 
+find . -name "filename*"
+
