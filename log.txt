@@ -77,6 +77,8 @@ iface eth0 inet static
 address 116.57.115.113
 netmask 255.255.255.192
 gateway 116.57.115.126
+dns-nameservers 202.112.17.33
+sudo /etc/init.d/networking restart
 
 编码问题
 convmv -f GBK -t UTF-8 1.pdf 
