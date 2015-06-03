@@ -99,3 +99,4 @@ enca -L zh_CN -x utf-8  filename
 
 find . -name "filename*"
 
+du -h . 查看文件大小 -s递归
