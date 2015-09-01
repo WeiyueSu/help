@@ -18,7 +18,7 @@ sudo apt-get install vim
 Jdk环境变量
 sudo vi /etc/profile
 export JAVA_HOME=/usr/local/jdk1.8.0_25
-export ClASSPATH=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar:
+export CLASSPATH=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar:
 export PATH=$JAVA_HOME/bin:$PATH
 
 设置命令行颜色
@@ -107,4 +107,16 @@ find . -name 'a*'
 grep -rl .  'a*'
 递归查询内容有'a*'的文件
 
+nohut === &
+后台运行 退出不断
 
+Ubuntu 远程桌面
+gsettings set org.gnome.Vino require-encryption false
+dconf write /desktop/gnome/remote-access/require-encryption false
+
+挂载vbox共享文件夹
+mkdir /mnt/dbshare/
+mount -t vboxsf BaiduShare /mnt/bdshare/
+
+maven编译
+注意git checkout 版本
