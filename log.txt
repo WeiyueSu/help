@@ -120,3 +120,12 @@ mount -t vboxsf BaiduShare /mnt/bdshare/
 
 maven编译
 注意git checkout 版本
+
+add user 
+su root
+useradd -m username -s /bin/bash -p sdn -r 
+visudo
+username ALL=(ALL)ALL
+
+del user 
+userdel -r username
