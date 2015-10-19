@@ -129,3 +129,11 @@ username ALL=(ALL)ALL
 
 del user 
 userdel -r username
+ 
+eclipse dark theme
+perference->general->Appearance->color theme->sublime text2
+perference->general->Appearance->Theme->Dark
+
+eclipse no {}
+perference->c/c++->Editor->Content Assist->Typing->
+
