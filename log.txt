@@ -96,6 +96,7 @@ sudo apt-get install lib32stdc++6 lib32z1 lib32z1-dev
 
 乱码
 enca -L zh_CN -x utf-8  filename
+alias enca='enca -L zh_CN -x utf-8 '
 
 find . -name "filename*"
 
@@ -137,3 +138,5 @@ perference->general->Appearance->Theme->Dark
 eclipse no {}
 perference->c/c++->Editor->Content Assist->Typing->
 
+ubuntu+win7
+sudo update-grub
