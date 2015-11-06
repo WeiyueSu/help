@@ -140,3 +140,6 @@ perference->c/c++->Editor->Content Assist->Typing->
 
 ubuntu+win7
 sudo update-grub
+
+不见了sudo reboot
+sudo apt-get install upstart-sysv
