@@ -136,7 +136,7 @@ perference->general->Appearance->color theme->sublime text2
 perference->general->Appearance->Theme->Dark
 
 eclipse no {}
-perference->c/c++->Editor->Content Assist->Typing->
+perference->c/c++->Editor->Typing->
 
 ubuntu+win7
 sudo update-grub
