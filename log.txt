@@ -124,9 +124,10 @@ maven编译
 
 add user 
 su root
-useradd -m username -s /bin/bash -p sdn -r 
-visudo
-username ALL=(ALL)ALL
+useradd -m username -s /bin/bash -p password -r 
+adduser username sudo 
+#visudo
+#username ALL=(ALL)ALL
 
 del user 
 userdel -r username
