@@ -124,10 +124,8 @@ maven编译
 
 add user 
 su root
-useradd -m username -s /bin/bash -p password -r 
-adduser username sudo 
-#visudo
-#username ALL=(ALL)ALL
+useradd -m  username -g sudo -s /bin/bash -r 
+passwd username 
 
 del user 
 userdel -r username
@@ -144,3 +142,8 @@ sudo update-grub
 
 不见了sudo reboot
 sudo apt-get install upstart-sysv
+
+Nouveau
+vi /etc/modprobe.d/nvidia-installer-disable-nouveau.conf
+blacklist nouveau
+blacklist lbm-nouveau
