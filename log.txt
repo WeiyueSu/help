@@ -124,9 +124,8 @@ maven编译
 
 add user 
 su root
-useradd -m username -s /bin/bash -p sdn -r 
-visudo
-username ALL=(ALL)ALL
+useradd -m  username -g sudo -s /bin/bash -r 
+passwd username 
 
 del user 
 userdel -r username
@@ -136,10 +135,28 @@ perference->general->Appearance->color theme->sublime text2
 perference->general->Appearance->Theme->Dark
 
 eclipse no {}
-perference->c/c++->Editor->Content Assist->Typing->
+perference->c/c++->Editor->Typing->
 
 ubuntu+win7
 sudo update-grub
 
 不见了sudo reboot
 sudo apt-get install upstart-sysv
+
+Nouveau
+vi /etc/modprobe.d/nvidia-installer-disable-nouveau.conf
+blacklist nouveau
+blacklist lbm-nouveau
+
+mac install pyopenssl
+env LDFLAGS="-L$(brew --prefix openssl)/lib" CFLAGS="-I$(brew --prefix openssl)/include" pip install cryptography
+
+mac ssh 乱码
+编辑 /etc/ssh_config，注释此行“ SendEnv LANG LC_*”即可。
+
+spark stackoverflow
+--conf spark.executor.extraJavaOptions=-Xss8m --conf spark.driver.extraJavaOptions=-Xss8m
+
+python3
+#coding=utf8
+from __future__ import (division,absolute_import,print_function,unicode_literals)
