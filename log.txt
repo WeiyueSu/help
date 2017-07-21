@@ -160,3 +160,43 @@ spark stackoverflow
 python3
 #coding=utf8
 from __future__ import (division,absolute_import,print_function,unicode_literals)
+
+mac gdb
+codesign -f -s  "gdb-cert"  <gnat_install_prefix>/bin/gdb
+
+locate
+sudo /usr/libexec/locate.updatedb
+
+mac mysql start
+/usr/local/Cellar/mysql/5.7.12/bin/mysql.server start
+UPDATE mysql.user SET Password=PASSWORD('lhr') WHERE User='root'; 
+SET PASSWORD = PASSWORD('lhr');
+
+ss-password-000
+
+ssh-keygen -t rsa -P '' -f ~/.ssh/id_rsa
+cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys
+chmod 0600 ~/.ssh/authorized_keys
+
+http://txp-01.tencent.com/proxy_devnet.pac
+http://127.0.0.1:8090/proxy.pac
+
+docker run -t -i ubuntu:14.04 /bin/bash
+
+nc -l 1234
+echo 'test'| nc 127.0.0.1 1234
+
+export TMPDIR=/data1/weiyuesu/tmp
+export TEMP=/data1/weiyuesu/tmp
+
+tmux 
+c create
+x close pane
+& close window
+" horizontal split 
+% vertical split
+
+python args
+parser = argparse.ArgumentParser(description="Run commands")
+parser.add_argument('-w', '--num-workers', default=1, type=int, help="")
+args = parser.parse_args()
